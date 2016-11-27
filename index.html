@@ -2,137 +2,141 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Naslov strani</title>
-<style>
+    <title>DuckCloud</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 
-
-div.header {
-	text-align: center;
-	align: auto;
-    background-color: green;
-	height: 20%;
-	width:100%;
-	border: 3px solid #73AD21;
-	display: block;
-}
-
-div.lefty {
-	float:left;
-    background-color: red;
-	height: 75%;
-	width:15%;
-	border: 3px solid #73AD21;
-	display: inline-block;
-}
-
-div.center {
-	float:right;
-    background-color: white;
-	margin_left: 20%;
-	height: 75%;
-	width:84%;
-	border: 3px solid #73AD21;
-	display: inline-block;
-	
-}
-
-.table {
-    display: table;
-}
-.row {
-    display: table-row;
-}
-.cell {
-    display: table-cell;
-    padding: 10px;
-}
-
-.row:hover {
-    background-color: #cccccc;
-}
-<!-- barvanje celice 
-.cell:hover {
-    background-color: #e5e5e5;
-}
--->
-
-
-</style>
 
 <body>
-<div>
-<div class="header"><table width="90%" height="200"><tr><td>HEADER BO TLE</td></tr></table></div>
 
-<div class="lefty"><table height="800" ><tr><td>orodna vrstica </td></tr></table></div>
-<div class="center">
-	<table height="70%" >
+
+<header>
+	<p class="thick">The best cloud in the pond,&nbsp;&nbsp;<img src="images/logo.jpg" alt="logo" style = "vertical-align:middle" height="150px"></p>
+	<!-- randomly generated daily message to be implemented -->
+</header>
+
+<lefty>
+
+	<ul>
+		<li><a href=""><h3 id="state">You're not signed in!</h3></a></li>
+		<li><br></li>
+		<li><a href="javascript:show('Login')" ><h4 id="loginLink">Sign in</h4></a></li>
+		<li><a href="javascript:show('Upload')" class="extra"><h4>Upload</h4></a></li>
+	</ul>
+	   
+</lefty>
+
+<center>
+	<!--<row>
+	<a href="#">
+        <cell>
+           <img src="dokument_slika.jpg" alt="Testna slika za dokument" style = "vertical-align:middle" ><span>Ime mojega dokumenta1...docxx  |   Malo daljsi opis mojega dokumenta.. a   b .... bc ...c  c</span>
+        </cell>
+	</a>
+	</row>-->
+	<div style="align:left;">
+	
+	<row>
+	<a id="link1" href="">
+        <cell>
+           <img id="img1" src="" class="file_img" ><span id="text1"></span>
+        </cell>
+	</a>
+	</row>
+	
+	
+	<row>
+	<a id="link2" href="" >
+        <cell>
+           <img id="img2" src="" class="file_img" ><span id="text2"></span>
+        </cell>
+	</a>
+	</row>
+	
+	
+	<row>
+	<a id="link3" href="">
+        <cell>
+           <img id="img3" src="" class="file_img" ><span id="text3"></span>
+        </cell>
+	</a>
+	</row>
+	
+	<row>
+	<a id="link4" href="">
+        <cell>
+           <img id="img4" src="" class="file_img" ><span id="text4"></span>
+        </cell>
+	</a>
+	</row>
+	
+	<row>
+	<a id="link5" href="">
+        <cell>
+           <img id="img5" src="" class="file_img"><span id="text5"></span>
+        </cell>
+	</a>
+	</row>
+	
+	<row>
+	<a id="link6" href="">
+        <cell>
+           <img id="img6" src="" class="file_img"><span id="text6"></span>
+        </cell>
+	</a>
+	</row>
+	
+	
+	
+	
+	</div>
 		
-		<tr><td>
-			<img src="dokument_slika.jpg" alt="Testna slika za dokument" style = "vertical-align:middle" ><span>Ime mojega dokumenta1...docxx</span>
-			
-		</td>
-		<td>
-			Malo daljsi opis mojega dokumenta.. a   b .... bc ...c  c.d.d.dd  c.c.c. 
-		</td>
-		</tr>
-		
-		
-		<a class="row" href="#">
-        <div class="cell">
-           <img src="dokument_slika.jpg" alt="Testna slika za dokument" style = "vertical-align:middle" ><span>Ime mojega dokumenta1...docxx</span>
-        </div>
-        <div class="cell">
-            Malo daljsi opis mojega dokumenta.. a   b .... bc ...c  c.d.d.dd  c.c.c. 
-        </div>
-   
-		</a>
-		
-		
-		
-		<tr><td>
-			<img src="dokument_slika.jpg" alt="Testna slika za dokument" style = "vertical-align:middle" ><span>Ime mojega dokumenta2...docxx</span>
-			
-		</td>
-		<td>
-			Malo daljsi opis mojega dokumenta.. a   b .... bc ...c  c.d.d.dd  c.c.c. 
-		</td>
-		</tr>
-		
-		<tr><td>
-			<img src="dokument_slika.jpg" alt="Testna slika za dokument" style = "vertical-align:middle" ><span>Ime mojega dokumenta3...docxx</span>
-			
-		</td>
-		<td>
-			Malo daljsi opis mojega dokumenta.. a   b .... bc ...c  c.d.d.dd  c.c.c. 
-		</td>
-		</tr>
-		
-		<tr><td>
-			<img src="dokument_slika.jpg" alt="Testna slika za dokument" style = "vertical-align:middle" ><span>Ime mojega dokumenta1...docxx</span>
-			
-		</td>
-		<td>
-			Malo daljsi opis mojega dokumenta.. a   b .... bc ...c  c.d.d.dd  c.c.c. 
-		</td>
-		</tr>
-		
-		<tr><td>
-			<img src="dokument_slika.jpg" alt="Testna slika za dokument" style = "vertical-align:middle" ><span>Ime mojega dokumenta1...docxx</span>
-			
-		</td>
-		<td>
-			Malo daljsi opis mojega dokumenta.. a   b .... bc ...c  c.d.d.dd  c.c.c. 
-		</td>
-		</tr>
-		
-		
-		
-		
-		
-		
-	</table>
-</div>
+</center>
+
+<!-- the login modal window-->
+<div id="modalLogin" class="modal">
+
+  <!-- modal content -->
+  <div class="modal-content">
+    <a class="close" href="javascript:hide('Login')">×</a>
+    <h1>Sign In</h1>
+	<form name="loginForm" onsubmit="return validateLoginForm()" method="post" action="javascript:login()">
+		Username: <input type="text" name="fname">
+		<br>
+		<br>
+		Password: <input type="password" name="fpass">
+		<br>
+		<br>
+		<input type="submit" value="Log in!">
+	</form>
+  </div>
+
 </div>
 
+<div id="modalUpload" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <a class="close" href="javascript:hide('Upload')">×</a>
+    <h1>Upload file</h1>
+	<form action="upload.php" name="uploadForm" onsubmit="return validateUploadForm()" method="post" enctype="multipart/form-data">
+		<input id="fileUpload" name="fileUpload" type="file" />
+		<br>
+		<br>
+		Date of upload: <input type="text" name="fdate">
+		<br>
+		<br>
+		Description of file: <input type="text" name="fcomment">
+		<br>
+		<br>
+		<input type="submit" value="Upload!" name="submit" />
+	</form>
+  </div>
+
+</div>
+
+
+<script src="js/script.js"></script>
 </body>
+
+ 
 </html>
